@@ -37,11 +37,7 @@ export function HomeNavbar() {
         <Box className="border-line-2"></Box>
 
         <Stack className="menu">
-          <Box>
-            {/* <NavLink to={"/"}>
-              <img className="brand-logo" src="/icons/text.logo.png" />
-            </NavLink> */}
-          </Box>
+          <Box></Box>
           {/* navbat start */}
           <Stack className="links">
             <Box className={"hover-line"}>
@@ -50,7 +46,9 @@ export function HomeNavbar() {
               </NavLink>
             </Box>
             <Box className={"hover-line"}>
-              <NavLink to="/products">Products</NavLink>
+              <NavLink to="/products" activeClassName={"underline"}>
+                Products
+              </NavLink>
             </Box>
             {authMember ? (
               <Box className={"hover-line"}>

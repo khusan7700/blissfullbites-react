@@ -50,7 +50,9 @@ export function OtherNavbar() {
               </NavLink>
             </Box>
             <Box className={"hover-line"}>
-              <NavLink to="/products">Products</NavLink>
+              <NavLink to="/products" activeClassName={"underline"}>
+                Products
+              </NavLink>
             </Box>
             {authMember ? (
               <Box className={"hover-line"}>
@@ -72,20 +74,6 @@ export function OtherNavbar() {
               </NavLink>
             </Box>
             {/* BASKET */}
-
-            {!authMember ? (
-              <Box>
-                <Button variant="contained" className="login-button">
-                  Login
-                </Button>
-              </Box>
-            ) : (
-              <img
-                className="user-avatar"
-                src={"/icons/user-icon.svg"}
-                aria-haspopup={"true"}
-              />
-            )}
           </Stack>
         </Stack>
       </Container>
