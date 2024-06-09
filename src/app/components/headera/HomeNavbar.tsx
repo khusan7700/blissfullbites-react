@@ -2,13 +2,18 @@ import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export function HomeNavbar() {
-  const authMember = true;
+  const authMember = null;
 
   return (
     <Stack className="home-navbar">
       <Container className="navbar-container">
         <Stack className="top-icons">
           <Box className="images">
+            {!authMember ? (
+              <Button variant="contained" className={"signup-button"}>
+                SIGN UP
+              </Button>
+            ) : null}
             <img className="search-icon" src="/icons/search.svg" alt="" />{" "}
             <input
               className="search-input"
@@ -83,13 +88,6 @@ export function HomeNavbar() {
             <Box className={"header-box"}>box-1</Box>
             <Box className={"header-box"}>box-1</Box>
             <Box className={"header-box"}>box-1</Box>
-            <Box className={"signup"}>
-              {!authMember ? (
-                <Button variant={"contained"} className={"signup-button"}>
-                  SIGN UP
-                </Button>
-              ) : null}
-            </Box>
           </Stack>
           <Stack className={"logo-frame"}></Stack>
         </Stack>

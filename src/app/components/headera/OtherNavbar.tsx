@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export function OtherNavbar() {
-  const authMember = true;
+  const authMember = null;
 
   return (
     <div className="other-navbar">
@@ -37,17 +37,10 @@ export function OtherNavbar() {
         <Box className="border-line-2"></Box>
 
         <Stack className="menu">
-          <Box>
-            {/* <NavLink to={"/"}>
-              <img className="brand-logo" src="/icons/text.logo.png" />
-            </NavLink> */}
-          </Box>
           {/* navbat start */}
           <Stack className="links">
             <Box className={"hover-line"}>
-              <NavLink to="/" activeClassName={"underline"}>
-                Home
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
             </Box>
             <Box className={"hover-line"}>
               <NavLink to="/products" activeClassName={"underline"}>
