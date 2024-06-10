@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export function HomeNavbar() {
-  const authMember = null;
+  const authMember = true;
 
   return (
     <Stack className="home-navbar">
@@ -89,7 +89,6 @@ export function HomeNavbar() {
             <Box className={"header-box"}>box-1</Box>
             <Box className={"header-box"}>box-1</Box>
           </Stack>
-          <Stack className={"logo-frame"}></Stack>
         </Stack>
       </Container>
     </Stack>
