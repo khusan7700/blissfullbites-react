@@ -82,14 +82,17 @@ export function HomeNavbar() {
           </Stack>
           {/* navbat end */}
         </Stack>
-        <Stack className={"header-frame"}>
-          <Stack className={"detail"}>
-            <Box className={"header-box"}>box-1</Box>
-            <Box className={"header-box"}>box-1</Box>
-            <Box className={"header-box"}>box-1</Box>
-            <Box className={"header-box"}>box-1</Box>
+        {/* -------------------swipaer qilish kerak---------------------- */}
+        {/* <Stack className={"header-frame"}>
+          <Stack className={"swiper"}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </Stack>
-        </Stack>
+        </Stack> */}
+        {/* -------------------swipaer qilish kerak---------------------- */}
       </Container>
     </Stack>
   );

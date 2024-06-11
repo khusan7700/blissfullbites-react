@@ -1,6 +1,6 @@
 .home-navbar {
   width: 100%;
-  height: 773px;
+  height: 633px;
   min-width: 800px;
   display: flex;
   background-image: url(/public/img/fon.jpg);
@@ -135,7 +135,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .home-navbar .navbar-container .menu .user-avatar {
@@ -301,7 +300,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .other-navbar .navbar-container .login-button {

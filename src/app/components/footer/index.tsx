@@ -20,12 +20,14 @@ export default function Footer() {
         <Stack flexDirection={"row"} sx={{ mt: "94px" }}>
           <Stack flexDirection={"column"} style={{ width: "340px" }}>
             <Box>
-              <img width={"100px"} src={"/icons/burak.svg"} />
+              <img width={"200px"} src={"/icons/text.logo.png"} />
             </Box>
             <Box className={"foot-desc-txt"}>
-              Focusing on the gourmet Turkish breakfast as well as the youth
-              society, CZN Burak Gurme aims to bring Turkish cuisine back. CZN
-              Burak Gurme creates an illusion with its cuisine.
+              Our delightful cake shop offers an array of exquisite handmade
+              cakes and pastries, crafted with the finest ingredients to bring
+              you a truly enchanting dessert experience. Whether it's for a
+              special occasion or a daily treat, each bite promises pure joy and
+              satisfaction.
             </Box>
             <Box className="sns-context">
               <img src={"/icons/facebook.svg"} />
@@ -57,15 +59,15 @@ export default function Footer() {
                 >
                   <Box flexDirection={"row"} className={"find-us"}>
                     <span>L.</span>
-                    <div>Downtown, Dubai</div>
+                    <div>Downtown, Seoul</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>P.</span>
-                    <div>+971 4 554 7777</div>
+                    <div>+82 10 7777 7777</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>E.</span>
-                    <div>devexuz@gmail.com</div>
+                    <div>Blissfulbites@gmail.com</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>H.</span>
