@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export function OtherNavbar() {
-  const authMember = true;
+  const authMember = false;
 
   return (
     <div className="other-navbar">

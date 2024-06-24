@@ -64,7 +64,7 @@
 }
 
 .home-navbar .login-button {
-  background: #999999;
+  background: none;
   color: #f8f8ff;
   margin-top: 18px;
   width: 100px;
@@ -77,7 +77,7 @@
   width: 100px;
   height: 30px;
   border-radius: 4px;
-  background: #8c8c8c;
+  background: none;
   color: #f8f8ff;
   text-align: center;
   font-family: Poppins;
@@ -87,6 +87,9 @@
   line-height: normal;
   margin-top: 18px;
   border: 2px solid black;
+}
+.home-navbar .navbar-container .signup-button:hover {
+  background-color: #000000;
 }
 
 .home-navbar .navbar-container {
@@ -306,7 +309,7 @@
   width: 100px;
   height: 30px;
   border-radius: 4px;
-  background: #8c8c8c;
+  background: none;
   color: #f8f8ff;
   text-align: center;
   font-family: Poppins;
@@ -316,6 +319,9 @@
   line-height: normal;
   margin-top: 18px;
   border: 2px solid black;
+}
+.other-navbar .navbar-container .login-button:hover {
+  background: black;
 }
 
 .other-navbar .navbar-container .menu .user-avatar {
