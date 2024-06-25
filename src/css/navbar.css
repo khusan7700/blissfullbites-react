@@ -3,7 +3,7 @@
   height: 633px;
   min-width: 800px;
   display: flex;
-  background-image: url(/public/img/fon.jpg);
+  background-image: url(/public/img/homepage-drawing-fon.jpg);
   background-size: cover;
 }
 .top-icon {
