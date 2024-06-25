@@ -11,7 +11,7 @@ import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 
 const list = [
   { productName: "Chesse", imagePath: "/products/cheese-cake-01.jpg" },
-  { productName: "Fresh", imagePath: "/products/Fresh-cake-01.jpg" },
+  { productName: "Fresh", imagePath: "/products/Fresh-cake-03.jpg" },
   { productName: "Napalyon", imagePath: "/products/Napalyon-cake-01.jpg" },
   { productName: "White", imagePath: "/products/White-cake-01.jpg" },
 ];

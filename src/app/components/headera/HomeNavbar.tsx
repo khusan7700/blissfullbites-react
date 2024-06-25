@@ -1,6 +1,10 @@
 import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { plans } from "../../../lib/dataProduct/plans";
+
 export function HomeNavbar() {
   const authMember = false;
 
@@ -83,15 +87,61 @@ export function HomeNavbar() {
           {/* navbat end */}
         </Stack>
         {/* -------------------swipaer qilish kerak---------------------- */}
-        {/* <Stack className={"header-frame"}>
-          <Stack className={"swiper"}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </Stack>
-        </Stack> */}
+
+        <Swiper
+          className={"events-info swiper-wrapper"}
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          spaceBetween={30}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{
+            el: ".swiper-pagination",
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: true,
+          }}
+        >
+          {plans.map((value, number) => {
+            return (
+              <SwiperSlide key={number} className={"events-info-frame"}>
+                <div className={"events-img"}>
+                  <img src={value.img} className={"events-img"} />
+                </div>
+                <Box className={"events-desc"}>
+                  <Box className={"events-bott"}>
+                    <Box className={"bott-left"}>
+                      <div className={"event-title-speaker"}>
+                        <strong>{value.title}</strong>
+                        <div className={"event-organizator"}>
+                          <img src={"/icons/speaker.svg"} />
+                          <p className={"spec-text-author"}>{value.author}</p>
+                        </div>
+                      </div>
+
+                      <p className={"text-desc"}> {value.desc} </p>
+
+                      <div className={"bott-info"}>
+                        <div className={"bott-info-main"}>
+                          <img src={"/icons/calendar.svg"} />
+                          {value.date}
+                        </div>
+                        <div className={"bott-info-main"}>
+                          <img src={"/icons/location.svg"} />
+                          {value.location}
+                        </div>
+                      </div>
+                    </Box>
+                  </Box>
+                </Box>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
         {/* -------------------swipaer qilish kerak---------------------- */}
       </Container>
     </Stack>
