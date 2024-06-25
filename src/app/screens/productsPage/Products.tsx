@@ -10,15 +10,19 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { ClassNames } from "@emotion/react";
 
+import GradeIcon from "@mui/icons-material/Grade";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
+import StarOutlineIcon from "@mui/icons-material/StarOutline";
+
 const products = [
-  { productName: "Cutlet", imagePath: "/img/Cutlet.webp" },
-  { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
-  { productName: "Kebab", imagePath: "/img/kebab.webp" },
-  { productName: "Lavash", imagePath: "/img/lavash.webp" },
-  { productName: "Lavash", imagePath: "/img/lavash.webp" },
-  { productName: "Cutlet", imagePath: "/img/Cutlet.webp" },
-  { productName: "Kebab", imagePath: "/img/kebab.webp" },
-  { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
+  { productName: "Cutlet", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Kebab", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Kebab", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Lavash", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Lavash", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Cutlet", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Kebab", imagePath: "/products/cheese-cake-01.jpg" },
+  { productName: "Kebab", imagePath: "/products/cheese-cake-01.jpg" },
 ];
 
 export default function Products() {
@@ -26,17 +30,14 @@ export default function Products() {
     <div className="products">
       <Container>
         {/* ------------------------ grandpadent class------------------------  */}
-        {/* ------------------------ grandpadent class------------------------  */}
-        {/* ------------------------ grandpadent class------------------------  */}
-        {/* ------------------------ grandpadent class------------------------  */}
         <Stack flexDirection={"column"} alignItems={"center"}>
           {/*------------------------ section 1--------------------------- */}
-          {/*------------------------ section 1--------------------------- */}
-          {/*------------------------ section 1--------------------------- */}
-          {/*------------------------ section 1--------------------------- */}
-          {/*------------------------ section 1--------------------------- */}
+
           <Stack className={"avatar-txt-srch"}>
-            <Box className={"burak-restaurant-txt"}> Burak Restaurant</Box>
+            <Box className={"burak-restaurant-txt"}>
+              {" "}
+              BlissfulBites Cake Restaurant
+            </Box>
 
             <Stack className="inputs">
               <input
@@ -52,10 +53,7 @@ export default function Products() {
           </Stack>
         </Stack>
         {/* ------------------------ section 2 ------------------------ */}
-        {/* ------------------------ section 2 ------------------------ */}
-        {/* ------------------------ section 2 ------------------------ */}
-        {/* ------------------------ section 2 ------------------------ */}
-        {/* ------------------------ section 2 ------------------------ */}
+
         <Stack className={"dishes-filter-section"}>
           <Stack className={"dishes-filter-box"}>
             <Button variant={"contained"} color={"primary"} className="order">
@@ -72,10 +70,7 @@ export default function Products() {
           </Stack>
         </Stack>
         {/*------------------------  section 3 ------------------------  */}
-        {/*------------------------  section 3 ------------------------  */}
-        {/*------------------------  section 3 ------------------------  */}
-        {/*------------------------  section 3 ------------------------  */}
-        {/*------------------------  section 3 ------------------------  */}
+
         <Stack className={"list-category-section"}>
           <Stack>
             <div className="gategory-main">
@@ -84,7 +79,7 @@ export default function Products() {
               </Button>
 
               <Button variant={"contained"} color={"secondary"}>
-                Dessert
+                Wedding
               </Button>
 
               <Button variant={"contained"} color={"secondary"}>
@@ -92,11 +87,11 @@ export default function Products() {
               </Button>
 
               <Button variant={"contained"} color={"secondary"}>
-                Salad
+                Pieces
               </Button>
 
               <Button variant={"contained"} color={"primary"}>
-                Dish
+                Cake
               </Button>
             </div>
           </Stack>
@@ -167,38 +162,81 @@ export default function Products() {
           </Stack>
         </Stack>
         {/* ------------------------  section 4 ------------------------ */}
-        {/* ------------------------  section 4 ------------------------ */}
-        {/* ------------------------  section 4 ------------------------ */}
-        {/* ------------------------  section 4 ------------------------ */}
-        {/* ------------------------  section 4 ------------------------ */}
+
         <Stack className={"list-category-section"}></Stack>
       </Container>
       {/* //div section 1 */}
       <div className={"brands-logo"}>
-        <Box className={"txt"}>Our Famliy Brands</Box>
+        <Box className={"txt"}>Our Chef</Box>
 
         <Stack className="brand-all-box">
           <Stack className="brand-box">
+            <img src="/img/cooker-01.jpg" />
+            <div className="include-all">
+              <h1>ANNA</h1>
+              <p>From California</p>
+              <p>since 2015</p>
+              <div>
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+              </div>
+            </div>
+          </Stack>
+
+          <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/gurme.webp" />
+              <img src="/img/cooker-02.jpg" />
+              <div className="include-all">
+                <h1>DAVID</h1>
+                <p>From California</p>
+                <p>since 2016</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
 
           <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/sweets.webp" />
+              <img src="/img/cooker-03.jpg" />
+              <div className="include-all">
+                <h1>SELENA</h1>
+                <p>From LosAngles</p>
+                <p>since 2019</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <StarHalfIcon className="GradeIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
 
           <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/seafood.webp" />
-            </Stack>
-          </Stack>
-
-          <Stack className="brand-box">
-            <Stack className="img">
-              <img src="/img/doner.webp" />
+              <img src="/img/cooker-04.jpg" />
+              <div className="include-all">
+                <h1>ALIS</h1>
+                <p>From Bostan</p>
+                <p>since 2022</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <StarOutlineIcon className="StarOutlineIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
         </Stack>

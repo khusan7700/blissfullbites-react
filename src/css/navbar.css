@@ -31,6 +31,7 @@
   left: 133px;
   top: 60px;
   opacity: 0.5;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .logo-brend-txt {
@@ -41,6 +42,7 @@
   top: 2px;
   display: inline;
   font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .images {
@@ -72,6 +74,7 @@
   font-family: Poppins;
   font-weight: 700;
   border: 2px solid black;
+  font-family: "Josefin Sans", sans-serif;
 }
 .home-navbar .navbar-container .signup-button {
   width: 100px;
@@ -87,6 +90,7 @@
   line-height: normal;
   margin-top: 18px;
   border: 2px solid black;
+  font-family: "Josefin Sans", sans-serif;
 }
 .home-navbar .navbar-container .signup-button:hover {
   background-color: #000000;
@@ -132,6 +136,7 @@
   padding: 18px;
   z-index: 999;
   border: 0.6px solid black;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-navbar .navbar-container .menu .links {
@@ -182,11 +187,6 @@
 
 /* --------------------Navbar end ----------------- */
 
-/* -----------------DETAIL----------------- */
-/* -----------------DETAIL----------------- */
-/* -----------------DETAIL----------------- */
-/* -----------------DETAIL----------------- */
-/* -----------------DETAIL----------------- */
 /* -----------------DETAIL----------------- */
 .home-navbar .navbar-container .header-frame {
   width: 1300px;
@@ -341,6 +341,7 @@
   color: #000000;
   font-weight: 700;
   z-index: 100;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .other-navbar .underline {
@@ -375,6 +376,7 @@
   margin-top: 90px;
   box-shadow: 0px 0px 10px 1px rgb(100, 100, 100);
   border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-navbar .navbar-container .events-img {
@@ -436,6 +438,7 @@
   line-height: 34px;
   color: #140342;
   font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-navbar .navbar-container .bott-left .text-desc {
@@ -446,6 +449,7 @@
   font-size: 17px;
   line-height: 26px;
   color: #4f547b;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-navbar .navbar-container .bott-left .bott-info {
@@ -470,6 +474,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #4f547b;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-navbar .navbar-container .bott-info .bott-info-main img {

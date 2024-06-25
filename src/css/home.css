@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 .homepage {
   width: 100%;
   height: auto;
@@ -23,6 +25,7 @@
 .homepage .static-frame .static-box .static-txt {
   tab-size: 10px;
   font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .static-frame .static-box .static-boxes {
@@ -60,6 +63,7 @@
   height: auto;
   position: relative;
   top: 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* -----------------------------POPULAR DISHES-------------------------- */
@@ -86,6 +90,7 @@
   line-height: normal;
   letter-spacing: 1.44px;
   color: #000;
+  font-family: "Josefin Sans", sans-serif;
 }
 .homepage .popular-dishes-frame .popular-section .cards-frame {
   margin-top: 43px;
@@ -132,11 +137,11 @@
 }
 
 .homepage .new-products-frame .category-title {
-  font-family: Dancing Script;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .new-products-frame .main .cards-frame {
@@ -169,7 +174,7 @@
   background: #ff9200;
   box-shadow: 4ps 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  font-family: "Poppins";
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -198,11 +203,13 @@
 .homepage .new-products-frame .product-detail .title {
   width: 65px;
   font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .new-products-frame .product-detail .price {
   width: 65px;
   font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .new-products-frame .product-detail .views {
@@ -211,6 +218,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .new-products-frame .product-detail .divider {
@@ -226,7 +234,7 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  font-family: "Poppins";
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -269,14 +277,15 @@
   justify-content: center;
   align-items: center;
   font-size: 36px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .active-users-frame .main .category-title {
-  font-family: Dancing Script;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .active-users-frame .main .card-frame {
@@ -301,6 +310,7 @@
   text-align: center;
   margin-left: 80px;
   font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .active-users-frame .no-data {
@@ -309,6 +319,7 @@
   font-size: 44px;
   font-weight: 500;
   color: #ff9200;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /** ----------------------------EVENTS-------------------------------- **/
@@ -321,12 +332,12 @@
 }
 
 .homepage .events-frame .category-title {
-  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
   padding-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .events-main {
@@ -346,6 +357,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .events-main .prev-next-frame {
@@ -400,6 +412,7 @@
   background: #f8f8ff;
   box-shadow: 0px 40px 30px rgba(25, 25, 46, 0.04);
   border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .events-desc .events-bott {
@@ -427,6 +440,7 @@
 .homepage .events-frame .event-title-speaker .event-organizator {
   display: flex;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .event-title-speaker .event-organizator img {
@@ -439,16 +453,17 @@
   font-style: normal;
   line-height: 34px;
   color: #140342;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .bott-left .text-desc {
   margin-top: 10px;
-  font-family: "GT Walsheim Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
   color: #4f547b;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .bott-left .bott-info {
@@ -467,7 +482,7 @@
   flex-direction: row;
   width: auto;
   height: 100%;
-  font-family: "GT Walsheim Pro";
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -492,6 +507,7 @@
   opacity: 1;
   background: #f8f8ff;
   border-radius: 50%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .events-frame .swiper-pagination-bullet-active {
@@ -505,6 +521,7 @@
   width: auto;
   height: 1900px;
   position: relative;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .history-frame .main {
@@ -517,6 +534,7 @@
   height: auto;
   font-size: 35px;
   font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .homepage .history-frame .main .category-title .card-frame {

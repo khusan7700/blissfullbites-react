@@ -6,7 +6,7 @@ import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { plans } from "../../../lib/dataProduct/plans";
 
 export function HomeNavbar() {
-  const authMember = false;
+  const authMember = true;
 
   return (
     <Stack className="home-navbar">
