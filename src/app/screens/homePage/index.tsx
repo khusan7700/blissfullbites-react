@@ -1,6 +1,7 @@
 import React from "react";
 import Advertisement from "./Advertisement";
 import ActiveUsers from "./ActiveUsers";
+import History from "./History";
 import PopularDishes from "./PopularDishes";
 import NewDishes from "./NewDishes";
 import Statistics from "./Statistics";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <NewDishes />
       <Advertisement />
       <ActiveUsers />
+      <History />
       <Events />
     </div>
   );

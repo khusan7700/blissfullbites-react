@@ -45,8 +45,7 @@ export function HomeNavbar() {
         <Box className="border-line"></Box>
         <Box className="border-line-2"></Box>
 
-        <Stack className="menu">
-          <Box></Box>
+        <Box className="menu">
           {/* navbat start */}
           <Stack className="links">
             <Box className={"hover-line"}>
@@ -79,13 +78,9 @@ export function HomeNavbar() {
               </NavLink>
             </Box>
             {/* BASKET */}
-
-            <Stack>
-              <img src="" alt="" />
-            </Stack>
           </Stack>
           {/* navbat end */}
-        </Stack>
+        </Box>
         {/* -------------------swipaer qilish kerak---------------------- */}
 
         <Swiper

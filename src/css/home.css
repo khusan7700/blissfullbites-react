@@ -8,12 +8,7 @@
 .homepage .static-frame {
   width: 100%;
   height: 276px;
-  /* background: rgb(255, 255, 255); */
-  background-image: url(/public/img/fix-fon.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: rgb(255, 232, 236);
 }
 
 .homepage .static-frame .static-box {
@@ -502,4 +497,306 @@
 .homepage .events-frame .swiper-pagination-bullet-active {
   background: #343434;
   border-radius: 50%;
+}
+
+/* -------------------HISTORY------------------- */
+
+.homepage .history-frame {
+  width: auto;
+  height: 1900px;
+  position: relative;
+}
+
+.homepage .history-frame .main {
+  width: auto;
+  height: 1800px;
+}
+
+.homepage .history-frame .main .category-title {
+  width: auto;
+  height: auto;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.homepage .history-frame .main .category-title .card-frame {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* --------------middle line---------------- */
+
+.homepage .history-frame .main .middle-line {
+  width: 1px;
+  height: 1600px;
+  border: 1px solid pink;
+  margin-top: 50px;
+}
+/* ------------------line---------------- */
+
+.homepage .history-frame .main .line {
+  width: 50px;
+  height: 1px;
+  border: 1px solid pink;
+  position: absolute;
+  top: 278.5px;
+  left: 720px;
+}
+.homepage .history-frame .main .line-2 {
+  width: 50px;
+  height: 1px;
+  border: 1px solid pink;
+  position: absolute;
+  top: 727.5px;
+  left: 670px;
+}
+.homepage .history-frame .main .line-3 {
+  width: 50px;
+  height: 1px;
+  border: 1px solid pink;
+  position: absolute;
+  top: 1127.5px;
+  left: 718px;
+}
+.homepage .history-frame .main .line-4 {
+  width: 50px;
+  height: 1px;
+  border: 1px solid pink;
+  position: absolute;
+  top: 1527.5px;
+  left: 670px;
+}
+/* ------------------dot---------------- */
+.homepage .history-frame .main .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 275px;
+  left: 714px;
+  border: 1px solid pink;
+  background-color: pink;
+}
+.homepage .history-frame .main .dot-2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 724px;
+  left: 714px;
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+.homepage .history-frame .main .dot-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1124px;
+  left: 714px;
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+.homepage .history-frame .main .dot-4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1524px;
+  left: 714px;
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+/* ------------------1---------------- */
+
+.history-frame .card-frame .history .right-1 .photo-01 {
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  left: 130px;
+  top: 100px;
+  filter: blur(1.5px);
+  border-radius: 10px;
+}
+.history-frame .card-frame .history .right-1 .photo-02 {
+  width: 430px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  left: 150px;
+  top: 120px;
+  border-radius: 10px;
+}
+
+.history-frame .card-frame .history .right-1 .text-01 {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  color: pink;
+  position: absolute;
+  right: 465px;
+  top: 250px;
+  font-weight: 300;
+}
+
+.history-frame .card-frame .history .right-1 .text-02 {
+  width: 400px;
+  height: 80px;
+  font-size: 30px;
+  position: absolute;
+  right: 120px;
+  top: 200px;
+  font-weight: 500;
+}
+
+.history-frame .card-frame .history .right-1 .text-03 {
+  width: 400px;
+  height: 120px;
+  font-size: 20px;
+  position: absolute;
+  right: 120px;
+  top: 300px;
+  font-weight: 300;
+  background: pink;
+  border-radius: 5px;
+}
+
+/* ------------------2---------------- */
+
+.history-frame .card-frame .history .right-2 .photo-02 {
+  width: 430px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  right: 120px;
+  top: 550px;
+  border-radius: 10px;
+}
+
+.history-frame .card-frame .history .right-2 .text-01 {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  color: pink;
+  position: absolute;
+  right: 663px;
+  top: 700px;
+  font-weight: 300;
+}
+
+.history-frame .card-frame .history .right-2 .text-02 {
+  width: 400px;
+  height: 80px;
+  font-size: 30px;
+  position: absolute;
+  left: 170px;
+  top: 620px;
+  font-weight: 500;
+}
+
+.history-frame .card-frame .history .right-2 .text-03 {
+  width: 400px;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  left: 170px;
+  top: 720px;
+  font-weight: 300;
+  background: pink;
+  border-radius: 5px;
+}
+
+/* ------------------3---------------- */
+
+.history-frame .card-frame .history .right-3 .photo-02 {
+  width: 430px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  left: 150px;
+  top: 960px;
+  border-radius: 10px;
+}
+
+.history-frame .card-frame .history .right-3 .text-01 {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  color: pink;
+  position: absolute;
+  right: 465px;
+  top: 1100px;
+  font-weight: 300;
+}
+
+.history-frame .card-frame .history .right-3 .text-02 {
+  width: 400px;
+  height: 80px;
+  font-size: 30px;
+  position: absolute;
+  right: 120px;
+  top: 1050px;
+  font-weight: 500;
+}
+
+.history-frame .card-frame .history .right-3 .text-03 {
+  width: 400px;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  right: 120px;
+  top: 1150px;
+  font-weight: 300;
+  background: pink;
+  border-radius: 5px;
+}
+
+/* ------------------4---------------- */
+
+.history-frame .card-frame .history .right-4 .photo-02 {
+  width: 430px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  right: 120px;
+  top: 1350px;
+  border-radius: 10px;
+}
+
+.history-frame .card-frame .history .right-4 .text-01 {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  color: pink;
+  position: absolute;
+  right: 660px;
+  top: 1500px;
+  font-weight: 300;
+}
+
+.history-frame .card-frame .history .right-4 .text-02 {
+  width: 400px;
+  height: 80px;
+  font-size: 30px;
+  position: absolute;
+  left: 170px;
+  top: 1460px;
+  font-weight: 500;
+}
+
+.history-frame .card-frame .history .right-4 .text-03 {
+  width: 400px;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  left: 170px;
+  top: 1560px;
+  font-weight: 300;
+  background: pink;
+  border-radius: 5px;
 }
