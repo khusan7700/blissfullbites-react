@@ -75,6 +75,8 @@
   font-size: 0.8em;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
+  background-color: #feeffc;
+  color: rgb(0, 0, 0);
 }
 
 /*--------------------------- BOXES BUTTONs --------------------------- */
@@ -101,6 +103,8 @@
   font-size: 12px;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
+  background-color: #fadaf4;
+  color: rgb(0, 0, 0);
 }
 /*--------------------------- BOXES  --------------------------- */
 
@@ -116,7 +120,6 @@
 }
 
 .box-boxes {
-  margin-left: 25px;
   width: 100%;
   height: auto;
   display: flex;
@@ -126,10 +129,27 @@
 
 .product-wrapper .product-card {
   width: 250px;
-  height: 400px;
+  height: 330px;
   border-top-left-radius: 25px;
   display: flex;
   flex-direction: column;
+}
+
+.products .product-wrapper .detail-of-box {
+  width: 250px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.5px solid rgb(41, 41, 41);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.products .product-wrapper .detail-of-box:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .product-wrapper .product-card .product-img {
@@ -137,61 +157,34 @@
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
-  border-top-right-radius: 35px;
+}
+.product-wrapper .product-card .shop-btn {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
 }
 
 .product-wrapper .product-card .product-sale {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 130px;
   height: 30px;
   border-radius: 35px;
   font-weight: 600;
-  background-color: #ffc800;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f0f0f0;
+  color: #000000;
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
 }
 
-.product-wrapper .product-card .hover-btns .shop-btn {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 20px;
+.product-wrapper .product-card .eye {
+  width: auto;
+  height: auto;
   position: relative;
-  top: 160px;
-  left: 90px;
-  background-color: rgb(153, 69, 168);
-  opacity: 0;
-}
-.product-wrapper .product-card .hover-btns .shop-btn:hover {
-  opacity: 1;
-}
-
-.product-wrapper .product-card .hover-btns .eye-icon {
-  position: absolute;
-  bottom: 20px;
-  position: relative;
-  top: 135px;
-  left: 210px;
-  display: flex;
-  opacity: 0;
-}
-
-.product-wrapper .product-card .hover-btns .eye {
-  position: absolute;
-  bottom: 20px;
-  position: relative;
-  top: 105px;
-  left: -15px;
-  display: flex;
-  opacity: 0;
-}
-
-.product-wrapper .product-card .hover-btns :hover {
-  opacity: 1;
+  top: 50px;
+  left: 30px;
 }
 
 .product-wrapper .product-card .product-desc {
@@ -245,6 +238,7 @@
   font-family: "Poppins";
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
+  color: white;
 }
 
 .brands-logo .brand-all-box {
@@ -318,8 +312,12 @@
 }
 
 /*-------------------------------- ADDRESS-------------------------------- */
+.address {
+  width: 100%;
+  height: 700px;
+}
 
-.address-area .title {
+.address .address-area .title {
   margin-top: 40px;
   font-size: 30px;
   color: #3c3c3c;
@@ -329,6 +327,21 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.address .address-area iframe {
+  width: 1250px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px 2px;
+}
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
+/*-------------------------------- Chosen Product-------------------------------- */
 /*-------------------------------- Chosen Product-------------------------------- */
 
 .products-page .chosen-product {

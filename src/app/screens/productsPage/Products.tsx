@@ -105,26 +105,28 @@ export default function Products() {
                         className={"product-img"}
                         sx={{ backgroundImage: `url(${product.imagePath})` }}
                       >
-                        <div className={"product-sale"}>Normal size</div>
-                        <Button className={"shop-btn"}>
-                          <img
-                            src={"/icons/shopping-cart.svg"}
-                            style={{ display: "flex" }}
-                          />
-                        </Button>
-
-                        <Button className={"view-btn"} sx={{ right: "36px" }}>
-                          <Badge
-                            badgeContent={20}
-                            color="secondary"
-                            className="eye"
-                          >
-                            <RemoceRedEyeIcon
-                              sx={{ color: 20 ? "gray" : "white" }}
-                              className="eye-icon"
+                        <div className="detail-of-box">
+                          <div className={"product-sale"}>Normal size</div>
+                          <Button className={"shop-btn"}>
+                            <img
+                              className="shop-btn"
+                              src={"/icons/shopping-cart.svg"}
+                              style={{ display: "flex" }}
                             />
-                          </Badge>
-                        </Button>
+                          </Button>
+                          <Button className={"view-btn"} sx={{ right: "36px" }}>
+                            <Badge
+                              badgeContent={20}
+                              color="secondary"
+                              className="eye"
+                            >
+                              <RemoceRedEyeIcon
+                                sx={{ color: 20 ? "gray" : "white" }}
+                                className="eye-icon"
+                              />
+                            </Badge>
+                          </Button>
+                        </div>
                       </Stack>
                     </Stack>
 
