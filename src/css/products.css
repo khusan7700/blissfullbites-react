@@ -104,18 +104,32 @@
 }
 /*--------------------------- BOXES  --------------------------- */
 
-.product-wrapper {
+.products .product-wrapper {
   width: 1100px;
-  height: 1000px;
+  height: 700px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
+}
+
+.box-boxes {
+  margin-left: 25px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .product-wrapper .product-card {
   width: 250px;
   height: 400px;
   border-top-left-radius: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-wrapper .product-card .product-img {
@@ -223,6 +237,7 @@
 }
 
 .brands-logo .txt {
+  padding-top: 30px;
   margin-top: 40px;
   font-size: 30px;
   color: #d7b586;
