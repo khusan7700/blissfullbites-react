@@ -1,5 +1,7 @@
-import { createSelector } from "reselect";
+// 43 minutdan boshlab yozish davom etsin
+import { createSelector } from "@reduxjs/toolkit";
 import { AppRootState } from "../../../lib/types/screen";
+import HomePage from ".";
 
 const selectHomePage = (state: AppRootState) => state.homePage;
 
