@@ -9,11 +9,8 @@ export default function PausedOrders() {
       <Stack>
         {[1, 2].map((ele, index) => {
           return (
-            //---------------- asosiy box ---------------
-            //---------------- asosiy box ---------------
-            //---------------- asosiy box ---------------
-            //---------------- asosiy box ---------------
-            //---------------- asosiy box ---------------
+            //------------------------------- asosiy box -----------------------
+
             <Box key={index} className={"order-main-box"}>
               <Box className={"order-box-scroll"}>
                 {[1, 2, 3].map((ele2, index2) => {
@@ -55,7 +52,6 @@ export default function PausedOrders() {
                 >
                   Cancel
                 </Button>
-
                 <Button
                   variant="contained"
                   color="secondary"
