@@ -18,6 +18,7 @@ import { Product } from "../../../lib/types/product";
 const actionDispatch = (dispatch: Dispatch) => ({
   setPopularDishes: (data: Product[]) => dispatch(setPopularDishes(data)),
 });
+
 const popularDishesRetriever = createSelector(
   retrievePopularDishes,
   (popularDishes) => ({ popularDishes })
@@ -25,9 +26,13 @@ const popularDishesRetriever = createSelector(
 
 export default function HomePage() {
   const { setPopularDishes } = actionDispatch(useDispatch());
-  // const { popularDishes } = useSelector(popularDishesRetriever);
+  const { popularDishes } = useSelector(popularDishesRetriever);
+
+  console.log(process.env.REACT_APP_API_URL);
 
   useEffect(() => {}, []);
+
+  console.log("popularDishes--->", popularDishes);
 
   return (
     <div className="homepage">
