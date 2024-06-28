@@ -18,18 +18,16 @@ import { Product } from "../../../lib/types/product";
 const actionDispatch = (dispatch: Dispatch) => ({
   setPopularDishes: (data: Product[]) => dispatch(setPopularDishes(data)),
 });
-const popolarDishesRetriever = createSelector(
+const popularDishesRetriever = createSelector(
   retrievePopularDishes,
   (popularDishes) => ({ popularDishes })
 );
 
 export default function HomePage() {
   const { setPopularDishes } = actionDispatch(useDispatch());
-  const { popularDishes } = useSelector(popolarDishesRetriever);
+  // const { popularDishes } = useSelector(popularDishesRetriever);
 
   useEffect(() => {}, []);
-
-  console.log("popilardishes", popularDishes);
 
   return (
     <div className="homepage">
