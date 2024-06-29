@@ -1,4 +1,4 @@
-import { useState, SyntheticEvent } from "react";
+import { useState, SyntheticEvent, useEffect } from "react";
 import { Container, Stack, Box } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -9,15 +9,61 @@ import ProcessOrders from "./ProcessOrders";
 import FinishedOrders from "./FinishedOrders";
 import PlaceIcon from "@mui/icons-material/Place";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "@reduxjs/toolkit";
+import { setPausedOrders, setProcessOrders, setFinishedOrders } from "./slice";
+import { Order, OrderInquiry } from "../../../lib/types/orders";
+import { OrderStatus } from "../../../lib/enums/order.enum";
+import OrderService from "../../services/OrderService";
+import { useGlobals } from "../../hooks/useGlobals";
+import { useHistory } from "react-router-dom";
 import "../../../css/order.css";
 
+/**  Redux slice & selector **/
+const actionDispatch = (dispatch: Dispatch) => ({
+  setPausedOrders: (data: Order[]) => dispatch(setPausedOrders(data)),
+  setProcessOrders: (data: Order[]) => dispatch(setProcessOrders(data)),
+  setFinishedOrders: (data: Order[]) => dispatch(setFinishedOrders(data)),
+});
+
 export default function OrdersPage() {
+  const { setPausedOrders, setProcessOrders, setFinishedOrders } =
+    actionDispatch(useDispatch());
+  const { orderBuilder, authMember } = useGlobals();
+  const history = useHistory();
   const [value, setValue] = useState("1");
+  const [orderInquiry, setOrderInquiry] = useState<OrderInquiry>({
+    page: 1,
+    limit: 5,
+    orderStatus: OrderStatus.PAUSE,
+  });
+
+  useEffect(() => {
+    const order = new OrderService();
+
+    order
+      .getMyOrders({ ...orderInquiry, orderStatus: OrderStatus.PAUSE })
+      .then((data) => setPausedOrders(data))
+      .catch((err) => console.log(err));
+
+    order
+      .getMyOrders({ ...orderInquiry, orderStatus: OrderStatus.PROCESS })
+      .then((data) => setProcessOrders(data))
+      .catch((err) => console.log(err));
+
+    order
+      .getMyOrders({ ...orderInquiry, orderStatus: OrderStatus.FINISH })
+      .then((data) => setFinishedOrders(data))
+      .catch((err) => console.log(err));
+  }, [orderInquiry, orderBuilder]);
+
+  /**--------------------------Handlers-------------------------**/
 
   const handleChange = (e: SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
 
+  if (!authMember) history.push("/");
   return (
     <div className={"order-container"}>
       <Stack className={"order-left"}>
@@ -37,8 +83,8 @@ export default function OrdersPage() {
             </Box>
           </Box>
           <Stack className={"order-main-content"}>
-            <PausedOrders />
-            <ProcessOrders />
+            {/* <PausedOrders setValue={setValue} />
+            <ProcessOrders setValue={setValue} /> */}
             <FinishedOrders />
           </Stack>
         </TabContext>
@@ -52,10 +98,7 @@ export default function OrdersPage() {
       <Stack className={"order-right"}>
         <Box className={"order-info-box"}>
           {/* top box */}
-          {/* top box */}
-          {/* top box */}
-          {/* top box */}
-          {/* top box */}
+
           <Box className={"member-box"}>
             <div className={"order-user-img"}>
               <img src={"/img/justin.webp"} className={"order-user-avatar"} />
@@ -73,9 +116,6 @@ export default function OrdersPage() {
         </Box>
       </Stack>
 
-      {/* bottom box */}
-      {/* bottom box */}
-      {/* bottom box */}
       {/* bottom box */}
 
       <Stack className="bottom-box">
