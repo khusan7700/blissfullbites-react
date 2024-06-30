@@ -106,6 +106,45 @@
   background-color: #fadaf4;
   color: rgb(0, 0, 0);
 }
+/*--------------------------- BOXES SHOP BTN  --------------------------- */
+.hover-btns {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 900;
+  opacity: 0;
+}
+.hover-btns:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hover-btns .shop-btn {
+  width: auto;
+  height: auto;
+  background-color: rgb(57, 57, 224);
+  position: relative;
+  top: 120px;
+  left: 90px;
+}
+
+.hover-btns .eye-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 120px;
+  left: 105px;
+}
+
+.hover-btns div {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 10px;
+}
 /*--------------------------- BOXES  --------------------------- */
 
 .products .product-wrapper {

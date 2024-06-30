@@ -19,6 +19,9 @@
   position: absolute;
   left: 130px;
 }
+.Basket {
+  background-color: red;
+}
 
 .images input {
   width: 200px;
@@ -502,7 +505,7 @@
 }
 
 /* BASKET  */
-/* 
+
 .basket-frame {
   position: relative;
   padding: 10px 4px 0px 4px;
@@ -634,4 +637,14 @@
   height: 260px;
   display: flex;
   flex-direction: column;
-} */
+}
+
+.hover-line .basket-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -70px;
+  right: -100px;
+  background-color: rgb(86, 86, 86);
+  border-radius: 50%;
+}

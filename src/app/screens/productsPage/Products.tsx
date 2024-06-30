@@ -22,6 +22,10 @@ import { serverApi } from "../../../lib/config";
 import { useHistory } from "react-router-dom";
 import { CartItem } from "../../../lib/types/search";
 
+import GradeIcon from "@mui/icons-material/Grade";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
+import StarOutlineIcon from "@mui/icons-material/StarOutline";
+
 /**  Redux slice & selector **/
 const actionDispatch = (dispatch: Dispatch) => ({
   setProducts: (data: Product[]) => dispatch(setProducts(data)),
@@ -101,7 +105,10 @@ export default function Products(props: ProductsProps) {
         <Stack flexDirection={"column"} alignItems={"center"}>
           {/*------------------------ section 1--------------------------- */}
           <Stack className={"avatar-txt-srch"}>
-            <Box className={"burak-restaurant-txt"}> Burak Restaurant</Box>
+            <Box className={"burak-restaurant-txt"}>
+              {" "}
+              BLISSFULBITES Restaurant
+            </Box>
 
             <Stack className="inputs">
               <input
@@ -191,7 +198,7 @@ export default function Products(props: ProductsProps) {
                   searchCollectionHandler(ProductCollection.DESSERT)
                 }
               >
-                Dessert
+                Wedding
               </Button>
 
               <Button
@@ -215,7 +222,7 @@ export default function Products(props: ProductsProps) {
                 }
                 onClick={() => searchCollectionHandler(ProductCollection.SALAD)}
               >
-                Salad
+                Pieces
               </Button>
 
               <Button
@@ -227,7 +234,7 @@ export default function Products(props: ProductsProps) {
                 }
                 onClick={() => searchCollectionHandler(ProductCollection.DISH)}
               >
-                Dish
+                Cake
               </Button>
             </div>
           </Stack>
@@ -268,11 +275,33 @@ export default function Products(props: ProductsProps) {
                             e.stopPropagation();
                           }}
                         >
+                          <Badge
+                            className="eye"
+                            badgeContent={product.productViews}
+                            color="secondary"
+                          ></Badge>
                           <img
+                            onClick={(e) => {
+                              onAdd({
+                                _id: product._id,
+                                quantity: 1,
+                                name: product.productName,
+                                price: product.productPrice,
+                                image: product.productImages[0],
+                              });
+                              e.stopPropagation();
+                            }}
                             src={"/icons/shopping-cart.svg"}
                             style={{ display: "flex" }}
                           />
                         </Button>
+                        <div>
+                          <GradeIcon className="GradeIcon" />
+                          <GradeIcon className="GradeIcon" />
+                          <GradeIcon className="GradeIcon" />
+                          <GradeIcon className="GradeIcon" />
+                          <GradeIcon className="GradeIcon" />
+                        </div>
                         <RemoceRedEyeIcon
                           className="eye-icon"
                           sx={{
@@ -280,11 +309,6 @@ export default function Products(props: ProductsProps) {
                               product.productViews === 0 ? "gray" : "white",
                           }}
                         />
-                        <Badge
-                          className="eye"
-                          badgeContent={product.productViews}
-                          color="secondary"
-                        ></Badge>
                       </Stack>
                     </Stack>
                     {/* ------------------------box end------------------------ */}
@@ -341,30 +365,76 @@ export default function Products(props: ProductsProps) {
       {/* //div section 1 */}
       {/* //div section 1 */}
       <div className={"brands-logo"}>
-        <Box className={"txt"}>Our Family Brands</Box>
+        <Box className={"txt"}>Our Chef</Box>
 
         <Stack className="brand-all-box">
           <Stack className="brand-box">
+            <img src="/img/cooker-01.jpg" />
+            <div className="include-all">
+              <h1>ANNA</h1>
+              <p>From California</p>
+              <p>since 2015</p>
+              <div>
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+                <GradeIcon className="GradeIcon" />
+              </div>
+            </div>
+          </Stack>
+
+          <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/gurme.webp" />
+              <img src="/img/cooker-02.jpg" />
+              <div className="include-all">
+                <h1>DAVID</h1>
+                <p>From California</p>
+                <p>since 2016</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
 
           <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/sweets.webp" />
+              <img src="/img/cooker-03.jpg" />
+              <div className="include-all">
+                <h1>SELENA</h1>
+                <p>From LosAngles</p>
+                <p>since 2019</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <StarHalfIcon className="GradeIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
 
           <Stack className="brand-box">
             <Stack className="img">
-              <img src="/img/seafood.webp" />
-            </Stack>
-          </Stack>
-
-          <Stack className="brand-box">
-            <Stack className="img">
-              <img src="/img/doner.webp" />
+              <img src="/img/cooker-04.jpg" />
+              <div className="include-all">
+                <h1>ALIS</h1>
+                <p>From Bostan</p>
+                <p>since 2022</p>
+                <div>
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <GradeIcon className="GradeIcon" />
+                  <StarOutlineIcon className="StarOutlineIcon" />
+                </div>
+              </div>
             </Stack>
           </Stack>
         </Stack>

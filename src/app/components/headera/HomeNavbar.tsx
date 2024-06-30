@@ -16,6 +16,7 @@ import { Logout } from "@mui/icons-material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { plans } from "../../../lib/dataProduct/plans";
+import Basket from "./Basket";
 
 interface HomeNavbarProps {
   cartItems: CartItem[];
@@ -55,7 +56,11 @@ export default function HomeNavbar(props: HomeNavbarProps) {
         <Stack className="top-icons">
           <Box className="images">
             {!authMember ? (
-              <Button variant="contained" className={"signup-button"}>
+              <Button
+                variant="contained"
+                onClick={() => setSignupOpen(true)}
+                className={"signup-button"}
+              >
                 SIGN UP
               </Button>
             ) : null}
@@ -67,19 +72,69 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             />
             {!authMember ? (
               <Box>
-                <Button variant="contained" className="login-button">
+                <Button
+                  variant="contained"
+                  className="login-button"
+                  onClick={() => setLoginOpen(true)}
+                >
                   Login
                 </Button>
               </Box>
             ) : (
               <img
                 className="user-avatar"
-                src={"/icons/user-icon.svg"}
+                src={
+                  authMember?.memberImage
+                    ? `${serverApi}/${authMember?.memberImage}`
+                    : "/icons/user-icon.svg"
+                }
                 aria-haspopup={"true"}
+                onClick={handleLogoutClick}
               />
             )}
+            <Menu
+              anchorEl={anchorEl}
+              id="account-menu"
+              open={Boolean(anchorEl)}
+              onClose={handleCloseLogout}
+              onClick={handleCloseLogout}
+              PaperProps={{
+                elevation: 0,
+                sx: {
+                  overflow: "visible",
+                  filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                  mt: 1.5,
+                  "& .MuiAvatar-root": {
+                    width: 32,
+                    height: 32,
+                    ml: -0.5,
+                    mr: 1,
+                  },
+                  "&:before": {
+                    content: '""',
+                    display: "block",
+                    position: "absolute",
+                    top: 0,
+                    right: 14,
+                    width: 10,
+                    height: 10,
+                    bgcolor: "background.paper",
+                    transform: "translateY(-50%) rotate(45deg)",
+                    zIndex: 0,
+                  },
+                },
+              }}
+              transformOrigin={{ horizontal: "right", vertical: "top" }}
+              anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+            >
+              <MenuItem onClick={handleLogoutRequest}>
+                <ListItemIcon>
+                  <Logout fontSize="small" style={{ color: "blue" }} />
+                </ListItemIcon>
+                Logout
+              </MenuItem>
+            </Menu>
             <img src="/icons/heart.svg" alt="" />
-            <img src="/icons/basket-empty.svg" alt="" />
             <img src="/icons/menu.svg" alt="" />
           </Box>
         </Stack>
@@ -111,6 +166,16 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                 <NavLink to="/member-page" activeClassName={"underline"}>
                   My Page
                 </NavLink>
+
+                <Box className={"basket-btn"}>
+                  <Basket
+                    cartItems={cartItems}
+                    onAdd={onAdd}
+                    onRemove={onRemove}
+                    onDelete={onDelete}
+                    onDeleteAll={onDeleteAll}
+                  />
+                </Box>
               </Box>
             ) : null}
             <Box className={"hover-line"}>
