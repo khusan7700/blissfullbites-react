@@ -55,6 +55,17 @@ export default function HomeNavbar(props: HomeNavbarProps) {
       <Container className="navbar-container">
         <Stack className="top-icons">
           <Box className="images">
+            <Box className={"basket-btn"}>
+              {authMember ? (
+                <Basket
+                  cartItems={cartItems}
+                  onAdd={onAdd}
+                  onRemove={onRemove}
+                  onDelete={onDelete}
+                  onDeleteAll={onDeleteAll}
+                />
+              ) : null}
+            </Box>
             {!authMember ? (
               <Button
                 variant="contained"
@@ -64,12 +75,6 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                 SIGN UP
               </Button>
             ) : null}
-            <img className="search-icon" src="/icons/search.svg" alt="" />{" "}
-            <input
-              className="search-input"
-              type="searchtext"
-              placeholder="ENTER YOUR KEYBOARD"
-            />
             {!authMember ? (
               <Box>
                 <Button
@@ -138,8 +143,8 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             <img src="/icons/menu.svg" alt="" />
           </Box>
         </Stack>
-        <Box className="border-line"></Box>
-        <Box className="border-line-2"></Box>
+        {/* <Box className="border-line"></Box>
+        <Box className="border-line-2"></Box> */}
 
         <Box className="menu">
           {/* navbat start */}
@@ -166,16 +171,6 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                 <NavLink to="/member-page" activeClassName={"underline"}>
                   My Page
                 </NavLink>
-
-                <Box className={"basket-btn"}>
-                  <Basket
-                    cartItems={cartItems}
-                    onAdd={onAdd}
-                    onRemove={onRemove}
-                    onDelete={onDelete}
-                    onDeleteAll={onDeleteAll}
-                  />
-                </Box>
               </Box>
             ) : null}
             <Box className={"hover-line"}>

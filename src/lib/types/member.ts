@@ -6,13 +6,13 @@ export interface Member {
   memberStatus: MemberStatus;
   memberNick: string;
   memberPhone: string;
-  memberPassword?: string;
+  memberPassword: string;
   memberAddress?: string;
   memberDesc?: string;
   memberImage?: string;
   memberPoints: number;
-  cleatedAt: Date;
-  updatedAd: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface MemberInput {

@@ -527,6 +527,19 @@
 .homepage .history-frame .main {
   width: auto;
   height: 1800px;
+  position: relative;
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    )
+    1;
 }
 
 .homepage .history-frame .main .category-title {
@@ -542,91 +555,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-/* --------------middle line---------------- */
-
-.homepage .history-frame .main .middle-line {
-  width: 1px;
-  height: 1600px;
-  border: 1px solid pink;
-  margin-top: 50px;
-}
-/* ------------------line---------------- */
-
-.homepage .history-frame .main .line {
-  width: 50px;
-  height: 1px;
-  border: 1px solid pink;
-  position: absolute;
-  top: 278.5px;
-  left: 720px;
-}
-.homepage .history-frame .main .line-2 {
-  width: 50px;
-  height: 1px;
-  border: 1px solid pink;
-  position: absolute;
-  top: 727.5px;
-  left: 670px;
-}
-.homepage .history-frame .main .line-3 {
-  width: 50px;
-  height: 1px;
-  border: 1px solid pink;
-  position: absolute;
-  top: 1127.5px;
-  left: 718px;
-}
-.homepage .history-frame .main .line-4 {
-  width: 50px;
-  height: 1px;
-  border: 1px solid pink;
-  position: absolute;
-  top: 1527.5px;
-  left: 670px;
-}
-/* ------------------dot---------------- */
-.homepage .history-frame .main .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 275px;
-  left: 714px;
-  border: 1px solid pink;
-  background-color: pink;
-}
-.homepage .history-frame .main .dot-2 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 724px;
-  left: 714px;
-  border: 1px solid pink;
-  background-color: pink;
-}
-
-.homepage .history-frame .main .dot-3 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 1124px;
-  left: 714px;
-  border: 1px solid pink;
-  background-color: pink;
-}
-
-.homepage .history-frame .main .dot-4 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 1524px;
-  left: 714px;
-  border: 1px solid pink;
-  background-color: pink;
 }
 
 /* ------------------1---------------- */

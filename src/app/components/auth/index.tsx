@@ -66,13 +66,12 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
     if (e.key === "Enter" && signupOpen) {
       handleSignupRequest().then();
     } else if (e.key === "Enter" && loginOpen) {
-      handleSignupRequest().then();
+      handleLoginRequest().then();
     }
   };
 
   const handleSignupRequest = async () => {
     try {
-      console.log("Inputs", memberNick, memberPhone, memberPassword);
       const isFulFill =
         memberNick !== "" && memberPhone !== "" && memberPassword !== "";
       if (!isFulFill) throw new Error(Messages.Error3);
@@ -89,9 +88,9 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
       setAuthMember(result);
       handleSignupClose();
     } catch (err) {
-      console.log("ERROR", err);
+      console.log(err);
       handleSignupClose();
-      sweetErrorHandling(err).then().catch();
+      sweetErrorHandling(err).then();
     }
   };
   const handleLoginRequest = async () => {
@@ -105,14 +104,12 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
       };
       const member = new MemberService();
       const result = await member.login(loginInput);
-
-      // ---------------------Saving Auticated user---------------------
       setAuthMember(result);
       handleLoginClose();
     } catch (err) {
-      console.log("ERROR", err);
+      console.log("fashdiah", err);
       handleLoginClose();
-      sweetErrorHandling(err).then().catch();
+      sweetErrorHandling(err).then();
     }
   };
 
