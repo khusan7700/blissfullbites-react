@@ -49,12 +49,17 @@ export default function OtherNavbar(props: OtherNavbarProps) {
       <Container className="navbar-container">
         <Stack className="top-icons">
           <Box className="images">
-            <img className="search-icon" src="/icons/search.svg" alt="" />{" "}
-            <input
-              className="search-input"
-              type="searchtext"
-              placeholder="ENTER YOUR KEYBOARD"
-            />
+            <Box className={"basket-btn"}>
+              {authMember ? (
+                <Basket
+                  cartItems={cartItems}
+                  onAdd={onAdd}
+                  onRemove={onRemove}
+                  onDelete={onDelete}
+                  onDeleteAll={onDeleteAll}
+                />
+              ) : null}
+            </Box>
             {!authMember ? (
               <Box>
                 <Button
@@ -123,8 +128,6 @@ export default function OtherNavbar(props: OtherNavbarProps) {
             <img src="/icons/menu.svg" alt="" />
           </Box>
         </Stack>
-        <Box className="border-line"></Box>
-        <Box className="border-line-2"></Box>
 
         <Stack className="menu">
           {/* navbat start */}
@@ -149,15 +152,6 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                 <NavLink to="/member-page" activeClassName={"underline"}>
                   My Page
                 </NavLink>
-                <Box className={"basket-btn"}>
-                  <Basket
-                    cartItems={cartItems}
-                    onAdd={onAdd}
-                    onRemove={onRemove}
-                    onDelete={onDelete}
-                    onDeleteAll={onDeleteAll}
-                  />
-                </Box>
               </Box>
             ) : null}
             <Box className={"hover-line"}>
@@ -165,7 +159,6 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                 Help
               </NavLink>
             </Box>
-            {/* BASKET */}
           </Stack>
         </Stack>
       </Container>
