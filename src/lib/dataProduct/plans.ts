@@ -61,6 +61,6 @@ export const plans = [
     author: "Belissimo Agent",
     date: "coming soon",
     location: "S.Korea, Seoul",
-    img: "/products/Snickers-cake-02.jpeg",
+    img: "/products/Snickers-cake-03.jpeg",
   },
 ];
