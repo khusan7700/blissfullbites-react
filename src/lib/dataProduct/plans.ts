@@ -55,12 +55,12 @@ export const plans = [
     location: "S.Korea, Daejon",
     img: "/products/White-cake-02.jpg",
   },
-  {
-    title: "Snickers cake",
-    desc: "Coming soon",
-    author: "Belissimo Agent",
-    date: "coming soon",
-    location: "S.Korea, Seoul",
-    img: "/products/Snickers-cake-03.jpeg",
-  },
+  // {
+  //   title: "Snickers cake",
+  //   desc: "Coming soon",
+  //   author: "Belissimo Agent",
+  //   date: "coming soon",
+  //   location: "S.Korea, Seoul",
+  //   img: "/products/Snickers-cake-03.jpeg",
+  // },
 ];
